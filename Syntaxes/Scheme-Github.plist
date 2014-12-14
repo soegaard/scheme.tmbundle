@@ -54,10 +54,6 @@
 			<key>include</key>
 			<string>#quote</string>
 		</dict>
-		<dict>
-			<key>include</key>
-			<string>#illegal</string>
-		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -113,7 +109,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>illegal</key>
 		<key>language-functions</key>
 		<dict>
 			<key>patterns</key>
@@ -651,7 +646,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;=[\(\s])(#\\).(?=[\s\)\]])</string>
+					<string>(?&lt;=[\(\s])(#\\).(?=[\s\)\])</string>
 					<key>name</key>
 					<string>constant.character.escape.scheme</string>
 				</dict>
