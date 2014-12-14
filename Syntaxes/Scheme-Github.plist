@@ -412,10 +412,6 @@
 					<key>include</key>
 					<string>#quote</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#illegal</string>
-				</dict>
 			</array>
 		</dict>
 		<key>sexp</key>
@@ -508,18 +504,14 @@
 							<key>include</key>
 							<string>#sexp</string>
 						</dict>
-						<dict>
-							<key>include</key>
-							<string>#illegal</string>
-						</dict>
 					</array>
 				</dict>
 				<dict>
 					<key>begin</key>
 					<string>(?x)
-						(?&lt;=\() # preceded by (
+						(?&lt;=[\(\[]) # preceded by (
 						(lambda)\s+
-						(\() # opening paren
+						([\(\[]) # opening paren
 						((?:
 						  ([[:alnum:]][[:alnum:]!$%&amp;*+-./:&lt;=&gt;?@^_~]*|[._])
 						  \s+
@@ -570,10 +562,6 @@
 							<key>include</key>
 							<string>#sexp</string>
 						</dict>
-						<dict>
-							<key>include</key>
-							<string>#illegal</string>
-						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -605,10 +593,6 @@
 						<dict>
 							<key>include</key>
 							<string>#sexp</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#illegal</string>
 						</dict>
 					</array>
 				</dict>
@@ -664,10 +648,6 @@
 				<dict>
 					<key>include</key>
 					<string>#sexp</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#illegal</string>
 				</dict>
 			</array>
 		</dict>
