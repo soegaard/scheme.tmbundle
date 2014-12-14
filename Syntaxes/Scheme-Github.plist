@@ -114,12 +114,6 @@
 			</array>
 		</dict>
 		<key>illegal</key>
-		<dict>
-			<key>match</key>
-			<string>[()\[\]]</string>
-			<key>name</key>
-			<string>invalid.illegal.parenthesis.scheme</string>
-		</dict>
 		<key>language-functions</key>
 		<dict>
 			<key>patterns</key>
